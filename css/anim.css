@@ -1,0 +1,39 @@
+.btn {
+    background-color: #232044;
+    color: #fff;
+    padding: 30px;
+    font-size: 2.1em;
+    text-decoration: none;
+    border: 5px #26BAFF solid;
+    font-family: verdana;
+    text-transform: uppercase;
+    position: relative;
+    transition-duration: 0.2s;
+    transition-property: all;
+    z-index: 1;
+    transition-timing-function: ease-in;
+}
+
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    float: left;
+    left: 0;
+    background-color: #26BAFF;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 120%;
+
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
